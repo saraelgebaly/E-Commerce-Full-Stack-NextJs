@@ -1,27 +1,24 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;   
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.bg-image{
+    background-image: url("../Assets/banner.jpg");
+    background-size: 25%;
+background-position: 80%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+@media only screen and (max-width: 942px) {
+    .bg-image{
+        background-image: none;
+  }}
+@media only screen and(min-width:300px), (max-width: 490px) {
+    .skeleton-banner{
+        width: 300px;
+        margin-inline: 5px;
+  }}
+@media only screen and (max-width: 299px) {
+    .skeleton-banner{
+        width: 230px;
+        margin-inline: 5px;
+  }}
