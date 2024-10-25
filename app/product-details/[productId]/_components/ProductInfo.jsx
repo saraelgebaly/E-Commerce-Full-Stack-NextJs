@@ -13,7 +13,6 @@ function ProductInfo({ product }) {
   const { loginData } = useAuth();
   const { getToast } = useToast();
   const router = useRouter();
-  const token = localStorage.getItem("token");
 
   const handleCart = () => {
     router.push("/login");
@@ -58,7 +57,7 @@ function ProductInfo({ product }) {
           </h1>
           <button
             onClick={
-              token ? () => handleAddToCart(product._id) : () => handleCart()
+              loginData ? () => handleAddToCart(product._id) : () => handleCart()
             }
             className="bg-primary hover:bg-red-600 rounded-md p-3 w-28 text-white mt-4"
           >

@@ -1,6 +1,6 @@
 "use client";
 import { useAuth } from "@/app/_Context/AuthContext";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import authImage from "../../../Assets/shopping-3253839_1280.jpg";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,6 +13,7 @@ function Login() {
   const { getUserData, loginData } = useAuth();
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+
   const { getToast } = useToast();
   const {
     register,
@@ -55,6 +56,7 @@ function Login() {
     //   console.log(error);
     // }
   };
+  
 
   return (
     <>
