@@ -7,7 +7,6 @@ import { useCart } from "../_Context/CartContext";
 import Cart from "./Cart";
 import cartApi from "../_Utils/carts";
 import { useRouter } from "next/navigation";
-import { signOut, useSession } from "next-auth/react";
 import { useAuth } from "../_Context/AuthContext";
 import { useToast } from "../_Context/ToastContext";
 

@@ -1,6 +1,5 @@
 "use client";
 import { useAuth } from "@/app/_Context/AuthContext";
-import createAxios from "@/app/_Utils/axiosRequest";
 import React, { useState } from "react";
 import authImage from "../../../Assets/shopping-3253839_1280.jpg";
 import Image from "next/image";
@@ -9,7 +8,6 @@ import logo from "../../../Assets/logo.svg";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import userApi from "../../_Utils/users";
-import { signIn, useSession } from "next-auth/react";
 import { useToast } from "@/app/_Context/ToastContext";
 function Login() {
   const { getUserData, loginData } = useAuth();

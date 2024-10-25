@@ -1,6 +1,5 @@
 import { connectMongoDB } from "@/libs/Models/MongoContect";
 import Product from "@/libs/Models/Products";
-import { Types } from "mongoose";
 import { NextResponse } from "next/server";
 
 export const GET = async (request, context) => {

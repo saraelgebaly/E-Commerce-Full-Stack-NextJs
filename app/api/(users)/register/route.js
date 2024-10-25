@@ -2,9 +2,7 @@ import { connectMongoDB } from "@/libs/Models/MongoContect";
 import User from "@/libs/Models/Users";
 import { NextResponse } from "next/server";
 const bcrypt = require("bcrypt");
-const saltRounds = 10;
-const myPlaintextPassword = "s0//P4$$w0rD";
-const someOtherPlaintextPassword = "not_bacon";
+
 export const POST = async (requset) => {
   try {
     await connectMongoDB();

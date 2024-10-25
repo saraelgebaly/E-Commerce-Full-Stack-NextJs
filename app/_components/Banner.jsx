@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import BannerImg from "../../Assets/71lnjn3Kn-L._AC_SX679_.jpg";
 import Link from "next/link";
 function Banner() {
   return (

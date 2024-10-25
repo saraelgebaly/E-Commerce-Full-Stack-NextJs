@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
-import { useSession } from "next-auth/react";
 
 export const AuthContext = createContext(null);
 

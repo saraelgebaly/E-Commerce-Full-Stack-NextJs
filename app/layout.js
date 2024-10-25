@@ -2,13 +2,12 @@
 
 import localFont from "next/font/local";
 import "./globals.css";
-import "react-toastify/dist/ReactToastify.css"; // Import the CSS for toastify
+import "react-toastify/dist/ReactToastify.css"; 
 
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import CartContextProvider from "./_Context/CartContext";
 import AuthContextProvider from "./_Context/AuthContext";
-import { SessionProvider } from "next-auth/react";
 import ToastContextProvider from "./_Context/ToastContext";
 import { ToastContainer } from "react-toastify";
 

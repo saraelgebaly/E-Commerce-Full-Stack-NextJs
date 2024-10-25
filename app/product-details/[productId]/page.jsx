@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import ProductsDetails from "./_components/ProductsDetails";
-import axios from "axios";
 import { usePathname } from "next/navigation";
 import productApi from "@/app/_Utils/products";
 
