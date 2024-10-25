@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "npm run start:api && next build",
+    "start:api":"localhost:3000/api"  ,
     "start": "next start",
     "lint": "next lint"
   },
