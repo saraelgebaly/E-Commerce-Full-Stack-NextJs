@@ -13,7 +13,6 @@ import { useToast } from "../_Context/ToastContext";
 function Header() {
   const { cart, setCart } = useCart();
   const { loginData } = useAuth();
-  
 
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [isRegister, setIsRegister] = useState(false);
@@ -58,11 +57,7 @@ function Header() {
     router.push("/");
 
     window.location.reload();
-
   };
-
- 
-
 
   return (
     !isLoggedIn &&
@@ -124,7 +119,7 @@ function Header() {
                     <div className=" flex gap-1 relative cursor-pointer transition hover:text-green-700 ">
                       <ShoppingCart onClick={handleCart} />
                       <h1 className="text-green-400 ">{cart?.length}</h1>
-                      {open && <Cart handleCart={handleCart} />}
+                      {open && <Cart key={cart.id} handleCart={handleCart} />}
                     </div>
 
                     <div className="sm:flex sm:gap-4">
@@ -138,7 +133,7 @@ function Header() {
                   </>
                 )}
                 {!loginData && (
-                  <div className="sm:flex sm:gap-4">
+                  <div key={loginData?.id} className="sm:flex sm:gap-4">
                     <a
                       className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow"
                       href="/login"

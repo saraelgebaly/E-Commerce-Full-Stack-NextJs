@@ -42,7 +42,7 @@ function ProductsCart() {
             <div className="mt-8">
               {cart?.length > 0 ? (
                 cart?.map((item) => (
-                  <ul className="" key={item?.id}>
+                  <ul  key={item?.id}>
                     <li className="md:flex items-center  m-10 md:gap-5 ">
                       <img
                         src={item?.product?.image}
@@ -73,49 +73,7 @@ function ProductsCart() {
                 </h1>
               )}
 
-              {/* // {cart[0]?.id 
-              //   ? cart?.map((item) => (
-              //       <ul className="" key={item?.id}>
-              //         <li className="md:flex items-center  m-10 md:gap-5 ">
-              //           <img
-              //             src={item?.product?.image}
-              //             alt="product-image"
-              //             className="size-32 rounded"
-              //           />
-
-              //           <div>
-              //             <h3 className="text-md text-gray-500">
-              //               {item?.product?.name}
-              //             </h3>
-              //             <h3 className="text-md text-gray-500">
-              //               Price: ${item?.product?.price}
-              //             </h3>
-              //           </div>
-
-              //           <div className="flex flex-1  items-center justify-center md:justify-end gap-2">
-              //             <button onClick={() => deleteCart(item?.id)}>
-              //               <Trash className=" text-primary transition hover:text-red-600" />
-              //             </button>
-              //           </div>
-              //         </li>
-              //       </ul>
-              //     ))
-              //   : Array.from({ length: 3 }, (_, i) => (
-              //       <div
-              //         key={i}
-              //         className="flex justify-around items-center my-5 "
-              //       >
-              //         <div className="flex items-center gap-5">
-              //           <div className="bg-slate-500 rounded-md size-32 "></div>
-              //           <div>
-              //             <h1 className="bg-slate-500 rounded-md w-[100px] h-[10px] my-3 "></h1>
-              //             <h1 className="bg-slate-500 rounded-md w-[100px] h-[10px] "></h1>
-              //           </div>
-              //           <div></div>
-              //         </div>
-              //         <div className="bg-slate-500 size-5 rounded-md"></div>
-              //       </div>
-              //     ))} */}
+           
               <div className="mt-8 flex justify-end border-t border-gray-100 pt-8">
                 <div className="w-screen max-w-lg space-y-4">
                   <dl className="space-y-0.5 text-sm text-gray-700">

@@ -12,7 +12,7 @@ import productsApi from "../_Utils/products"
 
       <div className=" grid md:grid-cols-4 sm:grid-rows-2 gap-5 p-5 ">
         {data?.map((product) => (
-          <Link href={`/product-details/${product._id}`} >
+          <Link key={product._id} href={`/product-details/${product._id}`} >
           <ProductsCard product={product}/>
           
           </Link>

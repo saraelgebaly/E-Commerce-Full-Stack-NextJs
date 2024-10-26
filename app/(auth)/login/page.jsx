@@ -158,7 +158,7 @@ function Login() {
 
                 <p className="mt-4 text-sm text-gray-500 sm:mt-0">
                   Create an account?
-                  <Link href="/register" className="text-teal-600 underline">
+                  <Link   href="/register" className="text-teal-600 underline">
                     Register
                   </Link>
                   .

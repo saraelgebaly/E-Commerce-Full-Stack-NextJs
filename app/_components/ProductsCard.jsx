@@ -3,7 +3,7 @@ import React from 'react'
 function ProductsCard({product}) {
   return (
     <>
-    <div className="group relative block overflow-hidden border  border-gray-100  rounded-lg ">
+    <div key={product._id} className="group relative block overflow-hidden border  border-gray-100  rounded-lg ">
           <img
             src={product.image}
             alt="product-image"

@@ -27,11 +27,7 @@ export const POST = async (requset) => {
       phone: phone,
     });
 
-    // bcrypt.hash(myPlaintextPassword, saltRounds, function (err, hash) {
-    //   // Store hash in your password DB.
-    // });
-
-    console.log(newUser);
+    
 
     await newUser.save();
 
@@ -43,7 +39,6 @@ export const POST = async (requset) => {
       { status: 201 }
     );
   } catch (error) {
-    console.log(error);
 
     return new NextResponse(
       JSON.stringify({

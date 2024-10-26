@@ -8,7 +8,6 @@ export const GET = async (request, context) => {
     await connectMongoDB();
 
     const productId = context.params.productId;
-    console.log(productId);
     
 
     const product = await Product.findById(productId);
@@ -26,7 +25,6 @@ export const GET = async (request, context) => {
       { status: 200 }
     );
   } catch (error) {
-    console.log(error);
 
     return new NextResponse(
       JSON.stringify({

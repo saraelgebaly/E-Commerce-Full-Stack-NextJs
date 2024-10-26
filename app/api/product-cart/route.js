@@ -32,7 +32,6 @@ export const GET = async (request) => {
       { status: 200 }
     );
   } catch (error) {
-    console.log(error);
 
     return new NextResponse(
       JSON.stringify({
@@ -82,7 +81,6 @@ export const POST = async (request) => {
       { status: 200 }
     );
   } catch (error) {
-    console.log(error);
 
     return new NextResponse(
       JSON.stringify({

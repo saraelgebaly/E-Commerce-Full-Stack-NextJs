@@ -6,7 +6,6 @@ export const DELETE = async (request,context) => {
   try {
     await connectMongoDB();
     const cartId = context.params.cartId;
-    console.log(cartId);
 
     const cart = await Cart.findByIdAndDelete(cartId);
     if (!cart) {
@@ -23,7 +22,6 @@ export const DELETE = async (request,context) => {
       { status: 200 }
     );
   } catch (error) {
-    console.log(error);
 
     return new NextResponse(
       JSON.stringify({
