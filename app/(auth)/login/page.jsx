@@ -39,22 +39,7 @@ function Login() {
       console.log(error);
       getToast("error", error.response?.data?.message);
     }
-    // try {
-    //   setLoading(true);
-
-    //   const res = await  signIn("credentials", {
-    //     email: data.email,
-    //     password: data.password,
-    //     redirect: false,
-    //   });
-    //   getToast("success", "Logged in Successfully");
-    //   router.push("/");
-
-    // } catch (error) {
-    //   // getToast("error", error.response.message);
-
-    //   console.log(error);
-    // }
+  
   };
   
 
