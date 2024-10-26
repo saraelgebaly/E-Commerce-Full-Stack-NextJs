@@ -1,5 +1,3 @@
-"use client"
-
 import { createContext, useContext, useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
 
@@ -10,7 +8,6 @@ export const useAuth = () => {
 };
 export default function AuthContextProvider(props) {
   const [loginData, setLoginData] = useState(null);
-  // const {data} = useSession()
 
   const getUserData = () => {
     const encodedToken= localStorage.getItem("token");
