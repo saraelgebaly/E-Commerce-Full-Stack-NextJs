@@ -14,7 +14,7 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  const { getToast } = useToast();
+  const { getToast } = useToast(); 
   const {
     register,
     handleSubmit,
