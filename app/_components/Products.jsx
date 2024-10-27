@@ -1,4 +1,3 @@
-"use client";
 import ProductsCard from "./ProductsCard";
 import Link from "next/link";
 import productsApi from "../_Utils/products"
